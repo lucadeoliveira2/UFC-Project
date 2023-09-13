@@ -129,25 +129,11 @@ for(name in unique(df$fighter_fullname)){
   full_df <- rbind(full_df, fighter_df)
 }
 df <- full_df # Actual fighter_w
+head(full_df)
 
 full_df <- data.frame()
 for(name in unique(df$fighter_fullname)){
-  fighter_df <- df |>
-    filter(fighter_fullname == name)
-  for(i in 1:nrow(fighter_df)){
-    if(i <5){
-      last5 <- sum(fighter_df[0:(i-1), 'winner.y'] == 'T') - sum(fighter_df[0:(i-1), 'winner.y'] == 'F')
-    }else{
-      last5 <- sum(fighter_df[(i-5):(i-1), 'winner.y'] == 'T') - sum(fighter_df[(i-5):(i-1), 'winner.y'] == 'F')
-    }
-    fighter_df$last5[i] <- last5
-  }
-  full_df <- rbind(full_df, fighter_df)
-}
-df <- full_df # Last 5 fights form
-
-full_df <- data.frame()
-for(name in unique(df$fighter_fullname)){
+  vector <- c()
   fighter_df <- df |>
     filter(fighter_fullname == name)
   for(i in 1:nrow(fighter_df)){
@@ -156,19 +142,20 @@ for(name in unique(df$fighter_fullname)){
     }else{
       newlast5 <- sum(fighter_df[(i-4):(i), 'winner.y'] == 'T') - sum(fighter_df[(i-4):(i), 'winner.y'] == 'F')
     }
-    fighter_df$newlast5[i] <- newlast5
+    vector[i] <- newlast5
   }
+  fighter_df$last5 <- append(vector[-length(vector)], 0, 0)
+  fighter_df$newlast5 <- vector
   full_df <- rbind(full_df, fighter_df)
-} # after fight last 5 (will be needed for my function at the end)
-df <- full_df 
+} # last 5 fight form (before and after fight)
+df <- full_df
 
 full_df <- data.frame()
 for(name in unique(df$fighter_fullname)){
-  fighter_name <- name
   streak <- 0
   full_streak <- c()
   fighter_df <- df|>
-    filter(fighter_fullname == fighter_name)
+    filter(fighter_fullname == name)
   for(j in 1:nrow(fighter_df)){
     if(streak == 0){
       if(fighter_df$winner.y[j] == 'T'){
@@ -191,46 +178,11 @@ for(name in unique(df$fighter_fullname)){
     }
     full_streak <- append(full_streak, streak)
   }
-  full_streak <- append(full_streak, 0, after = 0)
-  full_streak <- full_streak[-length(full_streak)]
-  fighter_df$streak <- full_streak
-  full_df <- rbind(full_df, fighter_df)
-}
-df <- full_df # Current Streak
-
-full_df <- data.frame()
-for(name in unique(df$fighter_fullname)){
-  fighter_name <- name
-  streak <- 0
-  full_streak <- c()
-  fighter_df <- df|>
-    filter(fighter_fullname == fighter_name)
-  for(j in 1:nrow(fighter_df)){
-    if(streak == 0){
-      if(fighter_df$winner.y[j] == 'T'){
-        streak <- 1
-      }else{
-        streak <- -1
-      }
-    }else if(streak<0){
-      if(fighter_df$winner.y[j] == 'T'){
-        streak <- 1
-      }else{
-        streak <- streak - 1
-      }
-    }else{
-      if(fighter_df$winner.y[j] == 'T'){
-        streak <- streak + 1
-      }else{
-        streak <- -1
-      }
-    }
-    full_streak <- append(full_streak, streak)
-  }
+  fighter_df$streak <- append(full_streak[-length(full_streak)],0,0)
   fighter_df$newstreak <- full_streak
   full_df <- rbind(full_df, fighter_df)
 }
-df <- full_df # After fight streak (will also be useful later down the line)
+df <- full_df # fight streak befpre and after the fight (will also be useful later down the line)
 
 full_df <- df
 df <- full_df
