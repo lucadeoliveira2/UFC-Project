@@ -1,5 +1,7 @@
 ## VERSION 1 ##
 
+# I'm Editing this shit
+
 ufc_fights <- read.csv("R/ufc_fights.csv")
 ufc_fighters <- read.csv('R/ufc_fighters.csv')
 ufc_stats <- read.csv('R/ufc_fight_stats.csv')
