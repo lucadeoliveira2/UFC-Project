@@ -411,7 +411,7 @@ my.function <- function(a, b, title, gender, category, model){
     }
   }
 }
-my.function("Shane Young", "Gabriel Miranda", 'FALSE', 'M', "Featherweight", mysvm)
+my.function("Dan Argueta", "Miles Johns", 'FALSE', 'M', "Bantamweight", nn)
 
 # Here you enter your two fighters, followed by TRUE/FALSE for titlefight
 # M or F for gender, the weightclass (please capitalise each word and use correct spelling) and finally the model you want to use
