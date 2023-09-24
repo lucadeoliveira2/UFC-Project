@@ -7,9 +7,11 @@ If I was to follow my models predictions I would bet:
 - Malkoun ML at -575
 - Mizuki ML at -310
 - $10 returns $130
+- Result : Only one that didn't go through is Malkoun at -575, he lost by DQ lol
 
 I would then have a separate bet with the risky bets:
 - Gamrot ML at +130
 - Argueta ML at -175
 - Collier ML at +114
 - $10 returns $77
+- Only Gamrot won, and that was a fluke (Fiziev Injury)
