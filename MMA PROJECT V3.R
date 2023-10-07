@@ -1,8 +1,8 @@
 # FINAL VERSION #
 
-ufc_fighters <- read.csv('ufc_fighters.csv')
-ufc_fights <- read.csv('ufc_fights.csv')
-ufc_stats <- read.csv("ufc_fight_stats.csv")
+ufc_fighters <- read.csv('~/UFC Project/ufc_fighters.csv')
+ufc_fights <- read.csv('~/UFC Project/ufc_fights.csv')
+ufc_stats <- read.csv("~/UFC Project/ufc_fight_stats.csv")
 
 #### DATA CLEANING/ENGINEERING ####
 

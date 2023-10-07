@@ -18,3 +18,5 @@ This is where I keep track of the models' performances
 - LOGMODEL went 2/3
 - NN went 5/6
 - Malkoun ML wouldv'e lost my bet (DQ at -575!!)
+
+
