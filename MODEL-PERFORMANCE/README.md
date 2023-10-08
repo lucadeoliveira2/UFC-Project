@@ -1,10 +1,10 @@
 This is where I keep track of the models' performances
 
 ### TOTALS ###
-- SVM = 12/15 (80%)
-- FOREST = 11/14 (79%)
-- LOGMODEL = 9/10 (90%)
-- NN = 11/12 (92%)
+- SVM = 12/21 (57%)
+- FOREST = 11/20 (55%)
+- LOGMODEL = 9/13 (69%)
+- NN = 12/19 (63%)
 
 ### NOCHE UFC: GRASSO VS SHEVCHENKO ###
 - SVM and NN models went 6/6
@@ -19,4 +19,10 @@ This is where I keep track of the models' performances
 - NN went 5/6
 - Malkoun ML wouldv'e lost my bet (DQ at -575!!)
 
+### UFC FIGHT NIGHT: DAWSON VS GREEN ###
+- SVM went 0/6
+- FOREST went 0/6
+- LOGMODEL went 0/3
+- NN went 1/7
+- Performance was horrendous, absolutely horrendous (tbf the model pretty much only picked underdogs, so expected).
 
