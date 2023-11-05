@@ -6,9 +6,10 @@ If I was to follow my models predictions I would bet:
 - Petrino ML at -245
 - Gomes ML at -135
 - $10 returns $93
-- Result : 
+- Result : Gomes lost (Also Petrosyan fight cancelled)
 
 I would then have a separate bet with the risky bets:
 - Almeida ML at -485
 - Dalby ML at +455
 - $10 returns $67
+- Result : Both Won actually, great picks on these fights
