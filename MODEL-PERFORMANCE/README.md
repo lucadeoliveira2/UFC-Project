@@ -1,10 +1,10 @@
 This is where I keep track of the models' performances
 
 ### TOTALS ###
-- SVM = 17/27 (63%)
-- FOREST = 15/25 (60%)
-- LOGMODEL = 13/18 (72%)
-- NN = 16/24 (66%)
+- SVM = 20/32 (63%)
+- FOREST = 18/31 (58%)
+- LOGMODEL = 16/23 (70%)
+- NN = 19/31 (61%)
 - Spent $70, returned $163
 
 ### NOCHE UFC: GRASSO VS SHEVCHENKO ###
@@ -28,6 +28,11 @@ This is where I keep track of the models' performances
 - Performance was horrendous, absolutely horrendous (tbf the model pretty much only picked underdogs, so expected).
 
 ### UFC 294: VOLK VS ISLAM ###
+- SVM went 3/5
+- LOGMODEL went 3/5
+- FOREST went 3/6
+- NN went 3/7
+- Didn't put any bets in, performance wasnt great
 
 ### UFC FIGHT NIGHT: ALMEIDA VS LEWIS ###
 - SVM went 5/6

@@ -4,8 +4,6 @@ my.function("Islam Makhachev", "Alexander Volkanovski", 'TRUE', 'M', "Lightweigh
 my.function("Islam Makhachev", "Alexander Volkanovski", 'TRUE', 'M', "Lightweight", forest)
 my.function("Islam Makhachev", "Alexander Volkanovski", 'TRUE', 'M', "Lightweight", nn) # Volk
 
-
-
 # CO-MAIN: CHIMAEV VS USMAN #
 my.function("Khamzat Chimaev", "Kamaru Usman", 'FALSE', 'M', "Middleweight", mysvm)
 my.function("Khamzat Chimaev", "Kamaru Usman", 'FALSE', 'M', "Middleweight", logmodel)
@@ -24,4 +22,21 @@ my.function("Ikram Aliskerov", "Warlley Alves", 'FALSE', 'M', "Middleweight", lo
 my.function("Ikram Aliskerov", "Warlley Alves", 'FALSE', 'M', "Middleweight", forest) # A
 my.function("Ikram Aliskerov", "Warlley Alves", 'FALSE', 'M', "Middleweight", nn) # A
 
+# NURMAGOMEDOV VS GAFUROV #
+extra.function('Said Nurmagomedov', 'Muin Gafurov', 'FALSE', 'M', 'Bantamweight') # All Predicted Nurmagomedov
+
+# ELLIOTT VS MOKAEV #
+extra.function('Tim Elliott', 'Muhammad Mokaev', 'FALSE', 'M', 'Flyweight') # All picked Mokaev
+
+# BASHARAT VS HENRY #
+extra.function('Javid Basharat', 'Victor Henry', 'FALSE', 'M', 'Bantamweight') # SVM picked Basharat
+
+# AZAITAR VS DUMAS #
+extra.function('Abu Azaitar', 'Sedriques Dumas', 'FALSE', 'M', 'Bantamweight') # Forest picked Azaitar
+
+# BREEDEN VS JUBLI #
+extra.function('Mike Breeden', 'Anshul Jubli', 'FALSE', 'M', 'Lightweight') # All picked Jubli
+
+# WOOD VS NAIMOV #
+extra.function('Nathaniel Wood', 'Muhammad Naimov', 'FALSE', 'M', 'Featherweight') # SVM, FOREST and NN picked Wood
 

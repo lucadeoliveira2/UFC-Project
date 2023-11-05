@@ -413,6 +413,15 @@ my.function <- function(a, b, title, gender, category, model){
 }
 my.function("Dan Argueta", "Miles Johns", 'FALSE', 'M', "Bantamweight", nn)
 
+extra.function <- function(fighter1, fighter2, title, gender, weight) {
+  results <- list()
+  results[[1]] <- my.function(fighter1, fighter2, title, gender, weight, mysvm)
+  results[[2]] <- my.function(fighter1, fighter2, title, gender, weight, logmodel)
+  results[[3]] <- my.function(fighter1, fighter2, title, gender, weight, forest)
+  results[[4]] <- my.function(fighter1, fighter2, title, gender, weight, nn)
+  return(results)
+}
+
 # Here you enter your two fighters, followed by TRUE/FALSE for titlefight
 # M or F for gender, the weightclass (please capitalise each word and use correct spelling) and finally the model you want to use
 # Options are mysvm (Support Vector Machine), forest (Random Forest), logmodel (Logistic Regression)
