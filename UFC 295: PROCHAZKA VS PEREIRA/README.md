@@ -14,3 +14,5 @@ Riskier Bets:
 Return: $10 returns $71.41
 
 Combination returns $762, I wouldn't bet this because of top 2 events
+
+Results: Both have failed
