@@ -1,11 +1,11 @@
 This is where I keep track of the models' performances
 
 ### TOTALS ###
-- SVM = 20/32 (63%)
-- FOREST = 18/31 (58%)
-- LOGMODEL = 16/23 (70%)
-- NN = 19/31 (61%)
-- Spent $70, returned $163
+- SVM = 24/40 (60%)
+- FOREST = 21/36 (58%)
+- LOGMODEL = 19/29 (66%)
+- NN = 22/38 (58%)
+- Spent $90, returned $163
 
 ### NOCHE UFC: GRASSO VS SHEVCHENKO ###
 - SVM and NN models went 6/6
@@ -38,3 +38,9 @@ This is where I keep track of the models' performances
 - SVM went 5/6
 - FOREST, NN and LOGMODEL went 4/5
 - Lost the big acca because of Gomes fumbling, but won on the risky bets, $10 returned $67
+
+### UFC 295: JIRI VS PEREIRA ###
+- SVM went 4/8
+- LOG went 3/6
+- FOREST went 3/5
+- NN went 3/7
